@@ -1,0 +1,18 @@
+.horizontal-card {
+  //background-color: aqua;
+  padding: 8px;
+  display: flex;
+  border: 1px solid #f5f5f5;
+  gap: 8px;
+  .left-content {
+  }
+  .right-content {
+    .title-and-time {
+      display: flex;
+    }
+    .read {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
