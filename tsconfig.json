@@ -1,5 +1,18 @@
 {
   "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "validate": false,
+        "tags": ["styled", "css", "sty"]
+      }
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@/components/*": ["/src/components/*"],
+      "@/styles/*": ["/src/styles/*"],
+      "@/pages/*": ["/src/pages/*"]
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
