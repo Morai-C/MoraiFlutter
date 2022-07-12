@@ -83,7 +83,12 @@ const DetailsPage: NextPage = () => {
         </div>
 
         <section>
-          <p>More Articles</p>
+          <p
+            className="fw-900 fs-24"
+            style={{ color: "#2c2c2c", marginBottom: "2.36rem" }}
+          >
+            More Articles
+          </p>
           <VerticalCard />
         </section>
       </Wrapper>

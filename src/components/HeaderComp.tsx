@@ -36,20 +36,39 @@ export default HeaderComp;
 
 const Header = styled.header`
   width: 100%;
+
+  display: flex;
+  margin-bottom: 4.1rem;
+  .social-links {
+    flex: 1;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+      height: 100%;
+
+      li {
+        font-size: 12px;
+        color: #6e6e6e;
+      }
+    }
+  }
   @media screen and (min-width: 768px) {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4.1rem;
+
     .logo {
       flex: 1;
     }
     .social-links {
       width: 25%;
+      flex: none;
       ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        list-style: disc;
         li {
           font-size: 12px;
           color: #6e6e6e;
