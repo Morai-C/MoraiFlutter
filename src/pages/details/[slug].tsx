@@ -5,7 +5,7 @@ import Layout from "layouts/Layout";
 import { NextPage } from "next";
 import React from "react";
 
-const DetailsPage: NextPage = () => {
+const SingleDetailsPage: NextPage = () => {
   return (
     <Layout>
       <Wrapper>
@@ -96,7 +96,7 @@ const DetailsPage: NextPage = () => {
   );
 };
 
-export default DetailsPage;
+export default SingleDetailsPage;
 
 const Wrapper = styled.div`
   .article-container {

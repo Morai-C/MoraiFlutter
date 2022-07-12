@@ -42,7 +42,11 @@ const HorizontalCard: React.FC = () => {
           <span className="fs-12 fw-500" style={{ color: "#6e6e6e" }}>
             3 Min Read
           </span>
-          <a href="#" className="fs-12 fw-700" style={{ color: "#1473E6" }}>
+          <a
+            href="/details"
+            className="fs-12 fw-700"
+            style={{ color: "#1473E6" }}
+          >
             Read Full <i className="fas fa-arrow-right fs-12"></i>
           </a>
         </div>
