@@ -1,0 +1,37 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  .vertical-card {
+    margin-bottom: 4.28rem;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    padding: 8px;
+    max-width: 26.2rem;
+
+    width: 100%;
+    .card-inner {
+      width: 100%;
+      max-width: inherit;
+      //background-color: red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .card-image {
+        //background-color: green;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .title-and-time {
+        display: flex;
+      }
+      .read {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

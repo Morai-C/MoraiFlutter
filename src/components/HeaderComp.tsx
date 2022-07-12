@@ -9,19 +9,24 @@ const HeaderComp: React.FC = (): JSX.Element => {
         <img src="/images/Dasdas Logo 1.png" alt="" />
       </div>
       <div className="social-links">
-        <a href="#">
-          <img src="/images/twitter.png" alt="twitter" />
-        </a>
+        <ul>
+          <a href="#">
+            <img src="/images/twitter.png" alt="twitter" />
+          </a>
 
-        <a href="#">
-          <img src="/images/dribbble.png" alt="basketball" />
-        </a>
-        <a href="#">
-          <img src="/images/figma.png" alt="figma" />
-        </a>
-        <a href="#">
-          <img src="/images/github.png" alt="github" />
-        </a>
+          <li></li>
+          <a href="#">
+            <img src="/images/dribbble.png" alt="basketball" />
+          </a>
+          <li></li>
+          <a href="#">
+            <img src="/images/figma.png" alt="figma" />
+          </a>
+          <li></li>
+          <a href="#">
+            <img src="/images/github.png" alt="github" />
+          </a>
+        </ul>
       </div>
     </Header>
   );
@@ -30,12 +35,26 @@ const HeaderComp: React.FC = (): JSX.Element => {
 export default HeaderComp;
 
 const Header = styled.header`
-  background-color: red;
   width: 100%;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4.1rem;
+    .logo {
+      flex: 1;
+    }
+    .social-links {
+      width: 25%;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          font-size: 12px;
+          color: #6e6e6e;
+        }
+      }
+    }
   }
 `;
